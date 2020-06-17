@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UFT-8"/>
+    <title>Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-sider">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="portfolio/academics.html">Academics</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="portfolio/contact.html">Networking Platforms</a>
+                </div>
+                <div class="nav-link-wrapper">
+                    <a href="portfolio/about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-sider">
+                <div class="brander">
+                    <div>Thabiso Robert Mabote</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-wrapper">
+        <div class="portfolio-items-wrapper">
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image: url(images/lithuto.jpg);"></div>
+                <a href="portfolio/academics.html">
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/Academics.png">
+                    </div>
+                    <div class="subtitle">
+                        My academic life journey full of things I'm grateful for!
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image: url(images/maeto.jpg);"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/Travel.png">
+                    </div>
+                    <div class="subtitle">
+                        Travelling is a blessing I don't take for granted!
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image: url(images/marang-rang.jpg);"></div>
+                <a href="portfolio/contact.html">
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                            <img src="images/logos/Media.png">
+                    </div>
+                    <div class="subtitle">
+                        Technology allows us to keep in touch with the ones we love and can't live without!
+                    </div>
+                </div>
+                </a>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image: url(images/lerato.jpg);"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/Love.png">
+                    </div>
+                    <div class="subtitle">
+                        My partner, my love and my bestfriend with whom every moment is so wholesome it can't be replicated!
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image: url(images/lapeng.jpg);"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/Siblings_family.png">
+                    </div>
+                    <div class="subtitle">
+                        Family is where my heart is, and I'm super blessed and grateful for all the sacrifices my family has done for me!
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image: url(images/bakhotsi.jpg);"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/Friends.png">
+                    </div>
+                    <div class="subtitle">
+                        Friends are those who are there for you even in your worst moments!
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image: url(images/africa.jpg);"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/Black.png">
+                    </div>
+                    <div class="subtitle">
+                        I am who I am, and I am super proud, grateful and blessed to be myself!
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image: url(images/bolo.jpg);"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/Soccer.png">
+                    </div>
+                    <div class="subtitle">
+                        Put me on a soccer field and see my pure passion and happiness!
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-item-wrapper">
+                <div class="portfolio-img-background" style="background-image: url(images/haeso.jpg);"></div>
+                <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="images/logos/Lesotho.png">
+                    </div>
+                    <div class="subtitle">
+                        The ups and the downs I've faced in my home country have largely contributed to my perception of the world today!
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+
+</html>
