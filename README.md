@@ -13,7 +13,7 @@
 
 ### Description
 
-1. Using `HTML`, `CSS`, and a snippet of `Javascript` embedded within the HTML file, I have created my first website at this [link](https://mabote1.github.io/maboterobertthabiso/).
+1. Using `HTML`, `CSS`, and `Javascript`, I have created my first website at this [link](https://mabote1.github.io/maboterobertthabiso/).
 2. This development is happening during summer of 2020, during COVID-19 and BLM crises!
 
 ### References
