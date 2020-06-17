@@ -127,12 +127,15 @@ body{
 }
 
 .profile-content-wrapper{
-    padding:10px
+    display: flex;
+    margin-right: 50px;
+    margin-left: -100px;
 }
 
-.profile-content-wrapper h1{
+
+/*.profile-content-wrapper h1{
     color: blue;
-}
+}*/
 
 /* contact page */
 
