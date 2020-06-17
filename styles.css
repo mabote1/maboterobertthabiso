@@ -132,6 +132,10 @@ body{
     margin-left: -100px;
 }
 
+.prof-cont-wrapper{
+    word-break: break-all;
+}
+
 
 /*.profile-content-wrapper h1{
     color: blue;
