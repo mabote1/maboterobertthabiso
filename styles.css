@@ -125,7 +125,7 @@ body{
 
 @media only screen and (max-width: 100%) {
     .portfolio-img-background{
-        height: 60vh;
+        height: 30vh;
         width: 100%;
         background-size: cover;
         background-position: center;
@@ -173,10 +173,14 @@ body{
     grid-template-columns: 1fr 1fr;
 }
 
+.column-wrapper{
+    position: relative;
+}
+
 .profile-image-wrapper img{
-    width: 50%;
-    margin-left: 100px;
-    padding: 10px;
+    width: 60%;
+    margin-left: 2vw;
+    padding: 2%;
 }
 
 .profile-content-wrapper{
