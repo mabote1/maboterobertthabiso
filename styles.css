@@ -132,12 +132,14 @@ body{
 .img-text-wrapper .subtitle{
     transition: 1s;
     font-weight: 600;
+    font-size: 2vw;
     color: transparent;
 }
 
 
 .img-text-wrapper:hover .subtitle{
     font-weight: 600;
+    font-size: 2vw;
     color: white;
 }
 
@@ -222,6 +224,8 @@ body{
 /*mobile display*/
 @media only screen and (max-width: 600px) {
     /* Portfolio styles */
+
+
     .portfolio-img-background{
         height: 30vh;
         width: 100%;
@@ -312,7 +316,7 @@ body{
         box-shadow: 0px 8px 16px 0px gray;
         z-index: 1;
         left: 120px;
-        top: 0px;
+        top: -22px;
     }
       
     .dropdown-content a {
