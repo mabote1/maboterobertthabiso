@@ -118,8 +118,8 @@ body{
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
+    margin-left: 30%;
+    margin-right: 30%;
 }
 
 .logo-wrapper img{
@@ -193,7 +193,7 @@ body{
     color: darkblue;
 }
 
-/* contact page  */
+/* travel page  */
 
 .trav-header h1{
     justify-content: center;
