@@ -263,13 +263,12 @@ body{
 
     .mob-nav-wrapper:before{
         content: "☰";
-        position: absolute;
-        top: 10px;
     }
 
     .mob-nav-wrapper{
         position: relative;
         display: inline-block;
+        top: 10px;
     }
 
     .left-sider {
