@@ -29,6 +29,10 @@ body{
     /*text-transform: uppercase;*/
 }
 
+.right-sider{
+    margin-top: 2vh;
+}
+
 .nav-wrapper > .right-sider > div{
     font-size: 2em;
     font-weight: bold;
@@ -272,32 +276,35 @@ body{
     .mob-nav-wrapper{
         position: relative;
         display: inline-block;
-        top: 10px;
+        top: 20px;
     }
 
     .left-sider {
         display: none;
         position: absolute;
         background-color: #f1f1f1;
-        min-width: 120px;
+        min-width: 110px;
         box-shadow: 0px 8px 16px 0px gray;
         z-index: 1;
         top: 30px;
     }
-      
-    .left-sider a {
+    
+    .left-sider  a{
+        padding: 3px 6px;
+        position: relative;
+        bottom: 3px;
+    }
+
+    .left-sider > .nav-link-wrapper> a and .left-sider > .dropdown > .nav-link-wrapper> a {
         color: black;
-        padding: 7px 6px;
         text-decoration: none;
         display: block;
-        margin-top: -22px;
-        margin-right: -22px;
     }
     
-    .left-sider >.nav-link-wrapper{
-        height: 30px;
+    .left-sider >.nav-link-wrapper {
+        height: auto;
     }  
-    .left-sider a:hover {background-color: #ddd;}
+    .left-sider a:hover {background-color: #ddd; }
       
     .mob-nav-wrapper:hover .left-sider {display: block;}
     
@@ -315,8 +322,8 @@ body{
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px gray;
         z-index: 1;
-        left: 120px;
-        top: -22px;
+        left: 85px;
+        top: -4px;
     }
       
     .dropdown-content a {
