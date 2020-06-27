@@ -304,8 +304,8 @@ body{
 
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: /*1.7vh;*/2.5vh;
+  width: /*0.8vw;*/1.2vw;
   margin: 0 3px;
   background-color: rgb(200, 200, 200);
   border-radius: 50%;
@@ -498,6 +498,11 @@ body{
 
     .pic-text {
         font-size: 3vw;
+    }
+
+    .dot {
+        height: /*0.5vh;*/0.7vh;
+        width: /*0.8vw;*/1.2vw;
     }
 }
 
