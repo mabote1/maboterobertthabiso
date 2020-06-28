@@ -232,19 +232,23 @@ body{
 
 .theSlides {display: none}
 .theDescriptions {display: none;}
-.theSlides > img {vertical-align: middle; width:27vw;}
+.theSlides > img {vertical-align: middle; width:28vw;}
 .theDescriptions>p {
     font-size: 1.5vw; 
     text-align:center;
-    padding: 2vw;
-    margin-left: -6vw; 
-    margin-top: 18vh;
+    padding: 2vw;  
+    position: relative;
+    bottom: 5vh;
 }
 
+.love-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
 .pic-wrapper{
-    display: grid;
-    grid-template-columns: repeat( 2, minmax(15.6vh, 1fr) );
+    display: flex;
+    flex-direction: column;
 }
 
 .slideshow-wrapper {
@@ -268,15 +272,15 @@ body{
   top: 50%;
   width: auto;
   padding: 3vh;
-  margin-top: -20vh;
+  margin-top: -10vh;
   color: black;
   font-weight: bold;
   font-size: 1.2vw;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
   user-select: none;
-  margin-right: 3.5vw;
-  margin-left: -2.5vw;
+  margin-right: 1.5vw;
+  margin-left: -3.5vw;
 }
 
 .next {
@@ -315,6 +319,8 @@ body{
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
+  position: relative;
+  bottom: 15vh;
 }
 
 .active, .dot:hover {
@@ -338,6 +344,82 @@ body{
   to {opacity: 1}
 }
 
+/*soccer page*/
+
+.vl{
+    position: absolute;
+    border-left: 3px solid #333;
+    height: 135%;
+}
+
+hr.hl{
+    border: 0px solid transparent;
+}
+
+.footballer{
+    margin-top: -2vh;
+}
+
+
+.footballer>.slideshow-wrapper>div { 
+    position: relative; 
+    top: 2vh; 
+    left: 1vw; 
+    right: 1vw; 
+}
+
+.theslideshower{
+    margin-left: 3vw;
+}
+
+.row{
+    margin-left: 1vw;
+}
+  
+.aSlide {
+    display: none;
+}
+  
+.aSlide> img{
+    vertical-align: middle; 
+    width:27vw;
+}
+
+.column> img{
+    vertical-align: middle;
+    height: 9vh;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.minipic {
+    opacity: 0.6;
+}
+
+.activ,
+.minipic:hover {
+    opacity: 1;
+}
 
 
 /*mobile display*/
@@ -479,13 +561,14 @@ body{
         margin-top: -2vh;
     }
 
-    .theSlides > img {vertical-align: middle; width:70vw;}
+    .theSlides > img, .aSlide> img {vertical-align: middle; width:70vw;}
 
-    .contents-wrapper{
+    .contents-wrapper, .footballer{
         height: 90vh;
+        margin-left: 2.5vw;
     }
 
-    .pic-wrapper{
+    .love-wrapper{
         display: flex;
         flex-direction: column;
     }
@@ -518,6 +601,34 @@ body{
     .dot {
         height: /*0.5vh;*/0.7vh;
         width: /*0.8vw;*/1.2vw;
+        position: relative;
+        bottom: 0vh;
+    }
+
+    /*soccer page*/
+
+    .vl{
+        position: absolute;
+        border-left: 0;
+        height: 0;
+    }
+
+    hr.hl{
+        border: 1px solid #333;
+        margin-left: -2.5vw;
+    }
+
+    .slideshow-wrapper{
+        margin-left: 12vw;
+    }
+    
+    .column> img{
+        height: 4.5vh;
+        margin-left:2vw;
+    }
+
+    .theslideshower,.row{
+        margin-left: 0;
     }
 }
 

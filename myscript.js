@@ -46,3 +46,33 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   timer=setTimeout(showSlides, 3000);
 }
+
+var aslideIndex = 1;
+showtheSlides(aslideIndex);
+
+function plustheSlides(n) {
+  showtheSlides(aslideIndex += n);
+}
+
+function currentaSlide(n) {
+  showtheSlides(aslideIndex = n);
+}
+
+function showtheSlides(n) {
+  var i;
+  var theslides = document.getElementsByClassName("aSlide");
+  var minipics = document.getElementsByClassName("minipic");
+  var captionText = document.getElementById("caption");
+  if (n==undefined){n = ++aslideIndex}
+  if (n > theslides.length) {aslideIndex = 1}
+  if (n < 1) {aslideIndex = theslides.length}
+  for (i = 0; i < theslides.length; i++) {
+      theslides[i].style.display = "none";
+  }
+  for (i = 0; i < minipics.length; i++) {
+    minipics[i].className = minipics[i].className.replace(" activ", "");
+  }
+  theslides[aslideIndex-1].style.display = "block";
+  minipics[aslideIndex-1].className += " activ";
+  captionText.innerHTML = minipics[aslideIndex-1].alt;
+}
