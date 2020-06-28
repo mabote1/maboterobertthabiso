@@ -106,15 +106,18 @@ body{
 .portfolio-items-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    background-color: #ddd;
 }
 
 .portfolio-item-wrapper{
     position: relative;
+    margin-top: 2vh;
+    margin-left: .5vw;
+    margin-right: .5vw;
 }
 
 .portfolio-img-background{
     height: 60vh;
-    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -129,12 +132,13 @@ body{
     align-items: center;
     height: 100%;
     text-align: center;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    margin-left: 3vw;
 }
 
 .logo-wrapper img{
-    width: 50%;
+    width: 30%;
     margin-bottom: 3px;
 }
 
@@ -338,27 +342,38 @@ body{
 
 /*mobile display*/
 @media only screen and (max-width: 600px) {
-    /* Portfolio styles */
-
-
-    .portfolio-img-background{
-        height: 30vh;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+    /*Navigation styles*/
+    .right-sider{
+        margin-right: -3vw;
     }
+
+    /* Portfolio styles */
+    .portfolio-items-wrapper{
+        width: 120vw;
+    }
+
+    .portfolio-item-wrapper{
+        margin-top: 3vh;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
     .img-text-wrapper{
-        position: absolute;
-        top: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        text-align: center;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        margin-left: 0vw;
+    }
+    
+    .logo-wrapper img{
+        width: 60%;
+    }
+
+    .img-text-wrapper .subtitle{
+        font-size: 5vw;
+    }
+
+    .img-text-wrapper:hover .subtitle{
+        font-size: 5vw;
     }
 
     /* academics page  */
