@@ -349,7 +349,7 @@ body{
 .vl{
     position: absolute;
     border-left: 3px solid #333;
-    height: 135%;
+    height: 135vh;
 }
 
 hr.hl{
@@ -399,6 +399,7 @@ hr.hl{
     background-color: #222;
     padding: 2px 16px;
     color: white;
+    font-size: 1.5vw;
 }
 
 .row:after {
@@ -638,6 +639,10 @@ hr.hl{
 
     .theslideshower,.row{
         margin-left: 0;
+    }
+
+    .caption-container {
+        font-size: 4vw;
     }
 }
 
