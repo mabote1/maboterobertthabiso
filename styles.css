@@ -364,7 +364,7 @@ hr.hl{
 .footballer>.slideshow-wrapper>div { 
     position: relative; 
     top: 2vh; 
-    left: 1vw; 
+    left: -2vw; 
     right: 1vw; 
 }
 
@@ -563,9 +563,9 @@ hr.hl{
 
     .theSlides > img, .aSlide> img {vertical-align: middle; width:70vw;}
 
-    .contents-wrapper, .footballer{
+    .contents-wrapper{
         height: 90vh;
-        margin-left: 2.5vw;
+        margin-left: 3vw;
     }
 
     .love-wrapper{
@@ -607,6 +607,15 @@ hr.hl{
 
     /*soccer page*/
 
+    .footballer{
+        height: 90vh;
+        margin-left: 5vw;
+    }
+
+    .footballer> h3{
+        margin-left: -5vw;
+    }
+
     .vl{
         position: absolute;
         border-left: 0;
@@ -615,7 +624,7 @@ hr.hl{
 
     hr.hl{
         border: 1px solid #333;
-        margin-left: -2.5vw;
+        margin-left: -5vw;
     }
 
     .slideshow-wrapper{
