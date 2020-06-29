@@ -350,6 +350,7 @@ body{
     position: absolute;
     border-left: 3px solid #333;
     height: 135vh;
+    margin-top: -.01vh;
 }
 
 hr.hl{
