@@ -559,7 +559,8 @@ hr.hl{
         padding: 3vw;
         text-align:center;
         margin-left: 0vw; 
-        margin-top: -2vh;
+        margin-top: -.5vh;
+        margin-bottom: -3vh;
     }
 
     .theSlides > img, .aSlide> img {vertical-align: middle; width:70vw;}
