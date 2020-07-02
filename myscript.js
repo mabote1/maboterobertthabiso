@@ -11,7 +11,7 @@ portfolioItems.forEach(portfolioItem => {
     })
 })
 
-/* Slideshow user interface*/
+/* Slideshow user interface for Fun Times*/
 var slideIndex = 1;
 var timer = null;
 showSlides(slideIndex);
@@ -47,6 +47,7 @@ function showSlides(n) {
   timer=setTimeout(showSlides, 3000);
 }
 
+/* Slideshow user interface for Soccer*/
 var aslideIndex = 1;
 showtheSlides(aslideIndex);
 
@@ -75,4 +76,20 @@ function showtheSlides(n) {
   theslides[aslideIndex-1].style.display = "block";
   minipics[aslideIndex-1].className += " activ";
   captionText.innerHTML = minipics[aslideIndex-1].alt;
+}
+
+/* Functions for Family and Friends pages*/
+function myFunction2(imgs) {
+  var expandImg = document.getElementById("expandedImg2");
+  var imgText = document.getElementById("imgtext2");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
 }

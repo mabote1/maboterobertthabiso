@@ -411,6 +411,7 @@ hr.hl{
 .column {
     float: left;
     width: 16.66%;
+    padding: .8vw;
 }
 
 .minipic {
@@ -420,6 +421,66 @@ hr.hl{
 .activ,
 .minipic:hover {
     opacity: 1;
+}
+
+/* faimly page*/
+.love-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.moments-header {
+    text-align: center;
+    padding: 3.2vh;
+}
+
+.moments-column {
+    float: left;
+    width: 10%;
+    padding: .8vw;
+}
+
+.moments-column img{
+    opacity: 0.8; 
+    cursor: pointer; 
+    height: 8vh;
+    position: relative;
+    top: 1.4vh;
+}
+
+.moments-column img:hover{
+    opacity: 1;
+}
+
+.moments-row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.moments-container{
+    position: relative;
+    display: none;
+    margin: auto;
+    width: 40vw;
+    margin-left: 1vw;
+}
+
+#imgtext, #imgtext2 {
+    position: absolute;
+    bottom: 2.7vh;
+    left: 1.2vh;
+    color: white;
+    font-size: 20px;
+}
+
+.closebtn, .closebtn2 {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
 }
 
 
@@ -635,7 +696,7 @@ hr.hl{
     
     .column> img{
         height: 4.5vh;
-        margin-left:2vw;
+        margin-left:1vw;
     }
 
     .theslideshower,.row{
@@ -645,5 +706,26 @@ hr.hl{
     .caption-container {
         font-size: 4vw;
     }
+
+    /* family page */
+    .moments-wrapper{
+        height: 100vh;
+    }
+    .moments-column img{
+        opacity: 0.8; 
+        cursor: pointer; 
+        height: 4vh;
+        position: relative;
+        top: 1.4vh;
+    }
+
+    .moments-container{
+        position: relative;
+        display: none;
+        width: 95vw;
+        top: 2vh;
+        margin-left: 2vw;
+    }
+    
 }
 
