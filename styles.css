@@ -142,6 +142,14 @@ body{
     margin-bottom: 3px;
 }
 
+.img-text-wrapper .logo-wrapper{
+    opacity: 0;
+}
+
+.img-text-wrapper:hover .logo-wrapper{
+    opacity: 1;
+}
+
 .img-text-wrapper .subtitle{
     transition: 1s;
     font-weight: 600;
@@ -511,6 +519,10 @@ hr.hl{
     
     .logo-wrapper img{
         width: 60%;
+    }
+
+    .img-text-wrapper .logo-wrapper{
+        opacity: 1;
     }
 
     .img-text-wrapper .subtitle{
