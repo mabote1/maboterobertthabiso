@@ -358,6 +358,7 @@ body{
     position: absolute;
     border-left: 3px solid #333;
     height: 165vh;
+    margin-top: .5vh;
 }
 
 hr.hl{
@@ -371,7 +372,7 @@ hr.hl{
 
 .footballer>.slideshow-wrapper>div { 
     position: relative; 
-    top: 2vh; 
+    top: 2.5vh; 
     left: -2vw; 
     right: 1vw; 
 }
@@ -381,7 +382,7 @@ hr.hl{
 }
 
 .row{
-    margin-left: 1vw;
+    margin-left: -1vw;
 }
   
 .aSlide {
@@ -396,6 +397,7 @@ hr.hl{
 .column> img{
     vertical-align: middle;
     height: 9vh;
+    margin-left: 0.2vw;
 }
 
 .cursor {
@@ -492,6 +494,36 @@ hr.hl{
     cursor: pointer;
 }
 
+
+/* lesotho page */
+.row3 {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column3 {
+    -ms-flex: 50%; 
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+
+.column3 img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.caption-container2 {
+    text-align: center;
+    background-color: rgb(90, 90, 90);
+    padding: 2px 16px;
+    color: rgb(255, 180, 180);
+    font-size: 1.5vw;
+}
 
 /*mobile display*/
 @media only screen and (max-width: 600px) {
@@ -684,7 +716,7 @@ hr.hl{
     /*soccer page*/
 
     .footballer{
-        height: 90vh;
+        height: 110vh;
         margin-left: 5vw;
     }
 
@@ -709,14 +741,14 @@ hr.hl{
     
     .column> img{
         height: 4.5vh;
-        margin-left:1vw;
+        margin-left:0vw;
     }
 
     .theslideshower,.row{
         margin-left: 0;
     }
 
-    .caption-container {
+    .caption-container, .caption-container2 {
         font-size: 4vw;
     }
 
@@ -739,6 +771,16 @@ hr.hl{
         top: 2vh;
         margin-left: 2vw;
     }
-    
+
+    /* lesotho page */
+    .lesotho-pic-wrapper{
+        margin-left: -3vw;
+    }
+
+    .column3 {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
 }
 
