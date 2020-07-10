@@ -512,7 +512,6 @@ hr.hl{
 }
 
 .column3 img {
-    margin-top: 8px;
     vertical-align: middle;
     width: 100%;
 }
@@ -523,6 +522,19 @@ hr.hl{
     padding: 2px 16px;
     color: rgb(255, 180, 180);
     font-size: 1.5vw;
+}
+
+.column3 figure{
+    border: thin #c0c0c0 solid;
+    margin: auto;
+}
+
+.column3 figcaption {
+    font-size: 1.2vw;
+    position: relative;
+    text-align: center;
+    background-color: #333;
+    color: white;
 }
 
 /*mobile display*/
@@ -781,6 +793,9 @@ hr.hl{
         -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
+    }
+    .column3 figcaption {
+        font-size: 3vw;
     }
 }
 
